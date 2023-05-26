@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_lots.xml" value="0.264" />
         <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_main.xml" value="0.1421875" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_splash_screen_admin.xml" value="0.1" />
         <entry key="..\:/parking_app/app/src/main/res/drawable/logo_app_background.xml" value="0.1975" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_main.xml" value="0.16" />

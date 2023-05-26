@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#33F44336">
 
-    <TextView
+
+    <ImageButton
+        android:id="@+id/lotsBtn"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/lotsimg" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/priceBtn"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pricesimg" />
+
+    <ImageButton
+        android:id="@+id/historyBtn"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/historyimg"
+        />
+
+    <ImageButton
+        android:id="@+id/usersBtn"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/usersimg"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accBtn"
+        android:layout_marginTop="460dp"
+        android:src="@drawable/contabilityimg"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
