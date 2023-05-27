@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ImageButton lotsBtn;
-    private ImageButton priceBtn;
     private ImageButton accBtn;
     private ImageButton usersBtn;
     private ImageButton historyBtn;
@@ -32,15 +31,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //configurare buton trimitere PricesActivity din MainActivity ADMIN
-        priceBtn = (ImageButton) findViewById(R.id.priceBtn);
-        priceBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                openPricesActivity();
-            }
-        });
 
         //configurare buton trimitere UsersActivity din MainActivity ADMIN
         usersBtn = (ImageButton) findViewById(R.id.usersBtn);
@@ -83,23 +73,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openPricesActivity() {
-        Intent intent = new Intent(this, PricesActivity.class);
-        startActivity(intent);
-    }
 
     private void openUsersActivity() {
-        Intent intent = new Intent(this, PricesActivity.class);
+        Intent intent = new Intent(this, UsersActivity.class);
         startActivity(intent);
     }
 
     private void openHistoryActivity() {
-        Intent intent = new Intent(this, PricesActivity.class);
+        Intent intent = new Intent(this, HistoryActivity.class);
         startActivity(intent);
     }
 
     private void openAccountingActivity() {
-        Intent intent = new Intent(this, PricesActivity.class);
+        Intent intent = new Intent(this, AccountingActivity.class);
         startActivity(intent);
     }
 }

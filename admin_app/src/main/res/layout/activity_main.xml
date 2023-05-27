@@ -15,16 +15,20 @@
         android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/lotsimg" />
+        android:src="@drawable/lotsimg"
+        android:padding="15dp"
+        android:background="@color/black"/>
 
     <ImageButton
-        android:id="@+id/priceBtn"
+        android:id="@+id/usersBtn"
         android:layout_marginTop="100dp"
         android:layout_marginRight="50dp"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/pricesimg" />
+        android:src="@drawable/usersimg"
+        android:padding="15dp"
+        android:background="@color/black"/>
 
     <ImageButton
         android:id="@+id/historyBtn"
@@ -34,25 +38,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/historyimg"
+        android:padding="15dp"
+        android:background="@color/black"
         />
 
     <ImageButton
-        android:id="@+id/usersBtn"
+        android:id="@+id/accBtn"
         android:layout_marginTop="280dp"
         android:layout_marginRight="50dp"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/usersimg"
+        android:src="@drawable/contabilityimg"
+        android:padding="15dp"
+        android:background="@color/black"
         />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/accBtn"
-        android:layout_marginTop="460dp"
-        android:src="@drawable/contabilityimg"
-        android:layout_centerHorizontal="true"/>
+
 
 
 </RelativeLayout>

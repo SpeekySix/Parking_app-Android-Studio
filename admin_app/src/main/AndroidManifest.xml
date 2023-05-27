@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Parking_app">
         <activity
-            android:name=".PricesActivity"
-            android:exported="false" />
-        <activity
             android:name=".AccountingActivity"
             android:exported="false" />
         <activity
