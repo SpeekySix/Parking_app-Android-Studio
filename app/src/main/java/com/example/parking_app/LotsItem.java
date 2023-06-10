@@ -1,14 +1,12 @@
-package com.example.admin_app;
+package com.example.parking_app;
 
 public class LotsItem {
-    String lotID;
-    String lotName;
-    String lotPrice;
+    String lotID, lotName, lotPrice;
 
+    LotsItem(){
 
-    //retrieving class
-    public LotsItem() {
     }
+
 
     public LotsItem(String lotID, String lotName, String lotPrice) {
         this.lotID = lotID;
@@ -39,5 +37,4 @@ public class LotsItem {
     public void setLotPrice(String lotPrice) {
         this.lotPrice = lotPrice;
     }
-
 }

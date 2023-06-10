@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -21,12 +22,23 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.SignInAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.auth.User;
+
+import java.util.jar.Attributes;
 
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView name,email;
+    TextView name;
+    //TextView email;
+
+    EditText nrPlateField, nameUsr, emailUsr;
+
     Button logout;
+    Button save;
 
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
@@ -34,12 +46,31 @@ public class HomeActivity extends AppCompatActivity {
     //parking button send to ParkingActivity
     ImageButton parkBtn;
 
+    DatabaseReference dbRef;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
+        nameUsr = findViewById(R.id.fieldName);
+        emailUsr = findViewById(R.id.fieldEmail);
+        nrPlateField = findViewById(R.id.fieldNrPlate);
+
+        save = findViewById(R.id.saveBtn);
+
+        dbRef = FirebaseDatabase.getInstance().getReference().child("USRS");
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                insertUser();
+            }
+        });
+
+
 
         //parking button configurare
         parkBtn = (ImageButton) findViewById(R.id.parkBtn);
@@ -50,10 +81,11 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-
         name = findViewById(R.id.name);
-        email = findViewById(R.id.email);
+        //email = findViewById(R.id.email);
+
+
+
         logout = findViewById(R.id.logoutBtn);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -64,11 +96,15 @@ public class HomeActivity extends AppCompatActivity {
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         if (account!=null){
             String Name = account.getDisplayName();
-            String Email = account.getEmail();
+            //String Email = account.getEmail();
 
             name.setText(Name);
-            email.setText(Email);
+            //email.setText(Email);
+
         }
+
+
+
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +113,18 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void insertUser() {
+
+        String nameU = nameUsr.getText().toString();
+        String emailU = emailUsr.getText().toString();
+        String plate = nrPlateField.getText().toString();
+
+        Users users = new Users(nameU, emailU, plate);
+
+        dbRef.push().setValue(users);
+        Toast.makeText(HomeActivity.this, "Modificarile au fost salvate!", Toast.LENGTH_SHORT).show();
     }
 
 

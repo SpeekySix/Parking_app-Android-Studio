@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/lot_item_bg_client"
+    android:padding="4sp"
+    android:layout_margin="4sp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Lot name"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#03FDFB"
+        android:textStyle="italic|bold"
+        android:textSize="18sp"
+        android:text="Lot Price"
+        android:textAlignment="center"
+        />
+
+
+
+</LinearLayout>

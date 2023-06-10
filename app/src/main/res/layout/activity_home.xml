@@ -11,10 +11,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textSize="30sp"
+        android:text="Bun venit,"
+        android:textSize="34sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:textStyle="bold|italic"
@@ -25,9 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name"
-        android:textSize="25sp"
+        android:textSize="28sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -35,46 +34,119 @@
         android:layout_below="@+id/welcome"
         />
 
+
+
+
+
+
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserName"
+        android:layout_below="@id/name"
+        android:text="Nume real:"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/fieldName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="E-mail"
-        android:textSize="25sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:id="@+id/email"
-        android:layout_below="@+id/name"
+        android:ems="15"
+        android:textSize="18sp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_below="@id/txtUserName"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserEmail"
+        android:layout_below="@id/fieldName"
+        android:text="E-mail:"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         />
+
+    <EditText
+        android:id="@+id/fieldEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="18sp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_below="@id/txtUserEmail"/>
+
+
+    <TextView
+        android:id="@+id/txtNrPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fieldEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Numar inmatriculare:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/fieldNrPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="18sp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_below="@id/txtNrPlate"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:layout_below="@id/fieldNrPlate"
+        android:backgroundTint="#E63F96C8"
+        android:padding="1dp"
+        android:textColor="@color/white"
+        android:text="SAVE"
+        android:textSize="18sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="5dp"/>
 
 
     <Button
         android:id="@+id/logoutBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/email"
+        android:layout_below="@+id/parkBtn"
         android:backgroundTint="#E63F96C8"
-        android:padding="10dp"
+        android:padding="1dp"
         android:textColor="@color/white"
         android:text="LOGOUT"
         android:textSize="18sp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="20dp"/>
 
 
 
     <ImageButton
         android:id="@+id/parkBtn"
-        android:layout_width="160dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="112dp"
         android:background="@drawable/parking_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="400dp"
+        android:layout_below="@+id/saveBtn"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
         />
+
+
 
 </RelativeLayout>
