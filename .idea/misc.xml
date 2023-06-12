@@ -21,9 +21,12 @@
         <entry key="..\:/parking_app/app/src/main/res/drawable/license_number_bg.xml" value="0.128" />
         <entry key="..\:/parking_app/app/src/main/res/drawable/logo_app_background.xml" value="0.1975" />
         <entry key="..\:/parking_app/app/src/main/res/drawable/lot_item_bg_client.xml" value="0.1" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_about.xml" value="0.19947916666666668" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_parking.xml" value="0.2" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/parking_app/app/src/main/res/layout/dialog_license_number.xml" value="0.2" />
         <entry key="..\:/parking_app/app/src/main/res/layout/lot_item.xml" value="0.176" />

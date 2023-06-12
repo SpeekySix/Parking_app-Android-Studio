@@ -92,11 +92,14 @@
 
     <Button
         android:id="@+id/payBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PLĂTEȘTE"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
         android:textSize="16dp"
         android:textColor="@color/white"
         android:layout_below="@+id/spinner3"

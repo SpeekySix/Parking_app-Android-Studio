@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/profiletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profilul meu"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/numetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/profiletxt"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/emailtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/numetxt"/>
+
+    <TextView
+        android:id="@+id/platetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24dp"
+        android:layout_below="@id/emailtxt"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Istoric\nparcari"
+        android:layout_marginRight="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/platetxt"/>
+
+
+
+
+
+</RelativeLayout>

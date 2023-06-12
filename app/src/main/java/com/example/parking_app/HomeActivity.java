@@ -46,6 +46,10 @@ public class HomeActivity extends AppCompatActivity {
     //parking button send to ParkingActivity
     ImageButton parkBtn;
 
+    Button about;
+    Button profile;
+    ImageButton maps;
+
     DatabaseReference dbRef;
 
 
@@ -85,6 +89,30 @@ public class HomeActivity extends AppCompatActivity {
         //email = findViewById(R.id.email);
 
 
+        about = (Button) findViewById(R.id.aboutBtn);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAboutActivity();
+            }
+        });
+
+        profile = (Button) findViewById(R.id.profileBtn);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openProfileActivity();
+            }
+        });
+
+        maps = (ImageButton) findViewById(R.id.mapsBtn);
+        maps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMapsActivity();
+            }
+        });
+
 
         logout = findViewById(R.id.logoutBtn);
 
@@ -113,6 +141,21 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void openMapsActivity() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+    private void openProfileActivity() {
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
+    private void openAboutActivity() {
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
     }
 
     private void insertUser() {
