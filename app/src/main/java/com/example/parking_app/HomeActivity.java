@@ -3,6 +3,7 @@ package com.example.parking_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.parking_app.databinding.ActivityHomeBinding;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -30,14 +32,19 @@ import com.google.firebase.firestore.auth.User;
 import java.util.jar.Attributes;
 
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends DrawerActivity {
+
+    ActivityHomeBinding activityHomeBinding;
 
     TextView name;
     //TextView email;
 
     EditText nrPlateField, nameUsr, emailUsr;
 
-    Button logout;
+    //ImageButton about;
+    //ImageButton profile;
+    ImageButton logout;
+
     Button save;
 
     GoogleSignInOptions gso;
@@ -46,8 +53,6 @@ public class HomeActivity extends AppCompatActivity {
     //parking button send to ParkingActivity
     ImageButton parkBtn;
 
-    Button about;
-    Button profile;
     ImageButton maps;
 
     DatabaseReference dbRef;
@@ -56,7 +61,9 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        activityHomeBinding = ActivityHomeBinding.inflate(getLayoutInflater());
+        setContentView(activityHomeBinding.getRoot());
+        allocateActivityTitle("");
 
 
         nameUsr = findViewById(R.id.fieldName);
@@ -88,8 +95,8 @@ public class HomeActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         //email = findViewById(R.id.email);
 
-
-        about = (Button) findViewById(R.id.aboutBtn);
+/*
+        about = (ImageButton) findViewById(R.id.aboutBtn);
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,13 +104,22 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        profile = (Button) findViewById(R.id.profileBtn);
+        profile = (ImageButton) findViewById(R.id.profileBtn);
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openProfileActivity();
             }
+        });*/
+
+        logout = findViewById(R.id.logoutBtn);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SignOut();
+            }
         });
+
 
         maps = (ImageButton) findViewById(R.id.mapsBtn);
         maps.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +130,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
-        logout = findViewById(R.id.logoutBtn);
+
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -132,15 +148,6 @@ public class HomeActivity extends AppCompatActivity {
         }
 
 
-
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SignOut();
-            }
-        });
-
     }
 
     private void openMapsActivity() {
@@ -148,7 +155,7 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openProfileActivity() {
+   /* private void openProfileActivity() {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
@@ -156,6 +163,16 @@ public class HomeActivity extends AppCompatActivity {
     private void openAboutActivity() {
         Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
+    }*/
+
+    private void SignOut() {
+        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(Task<Void> task) {
+                finish();
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
     }
 
     private void insertUser() {
@@ -185,14 +202,5 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void SignOut() {
 
-        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> task) {
-                finish();
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            }
-        });
-    }
 }

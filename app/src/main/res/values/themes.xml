@@ -1,16 +1,25 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Parking_app" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Parking_app" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#50DCF0</item>
+        <item name="colorPrimary">#001464</item> //button's default color
         <item name="colorPrimaryVariant">@color/backgroundColor</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item> //text button default
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/backgroundColor</item>
         <item name="colorSecondaryVariant">@color/backgroundColor</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/purple_500</item>
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="itemTextAppearance">@style/MenuItems</item>
+    </style>
+
+    <style name="MenuItems" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+
+        <item name="android:textColor">#001464</item>
+
+
     </style>
 </resources>

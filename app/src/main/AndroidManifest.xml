@@ -11,12 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Parking_app"
-
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="false" />
 
         <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyB28fJcobnlPG42Lxy8ipxwljbMCTw4CTU"></meta-data>
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB28fJcobnlPG42Lxy8ipxwljbMCTw4CTU" />
 
         <activity
             android:name=".MapsActivity"

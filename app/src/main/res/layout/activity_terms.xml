@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsActivity"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textLorem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc porta dui facilisis sagittis id a nisl. Pellentesque vel libero sed dui pretium aliquam eget ut libero. Donec mauris augue, consequat non est id, suscipit tincidunt ipsum. Quisque volutpat pulvinar justo, in fermentum ante pretium fermentum. Morbi ac ex justo. Duis hendrerit imperdiet pretium. Vivamus malesuada, lectus vel consectetur interdum, est lacus placerat nisl, et aliquet enim ante eu nibh.
+
+Ut venenatis quam nec pretium volutpat. Nunc facilisis, justo in vehicula cursus, est libero dignissim leo, in laoreet nibh augue a neque. Quisque fringilla, ipsum vel fermentum pretium, lorem ipsum rutrum lorem, nec sodales dui turpis eget dolor. Maecenas elementum arcu nec sapien congue, eu sagittis ante euismod. Suspendisse nec aliquam libero. Cras blandit suscipit odio vitae bibendum. Nulla eu neque sit amet justo posuere dictum non ut felis.
+
+Proin blandit arcu lorem. Quisque pellentesque turpis ex, nec ullamcorper magna tincidunt consequat. Duis cursus leo eu molestie pretium. Curabitur lacinia tempor nibh, ut aliquet arcu. Nunc tincidunt, elit in consectetur vulputate, est augue tristique justo, sed faucibus sem eros a tortor. Sed in elit sed ligula porttitor fermentum. Sed dapibus quam in lacinia tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin lobortis elit in lacinia faucibus. Donec laoreet ut ex id lobortis. Mauris at risus blandit, cursus mi non, aliquet quam.
+
+Phasellus ut euismod nulla. Suspendisse dictum molestie tellus, vel pulvinar ex ultrices sit amet. Fusce aliquet metus metus, et vehicula velit mattis sed. Vestibulum fringilla augue leo, a fermentum eros eleifend at. Vivamus libero metus, volutpat non odio eget, ornare aliquet lacus. In dictum faucibus aliquam. Donec et fringilla mi. Suspendisse quis molestie libero. In hac habitasse platea dictumst. Aliquam vel varius est, quis sodales diam. Vivamus id malesuada justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer id nulla in nunc vulputate tempus.
+
+Etiam id mi sit amet mi cursus rhoncus. Curabitur rutrum nulla ac magna gravida, bibendum vulputate nisi tempus. Integer eu varius urna. Pellentesque mattis accumsan faucibus. Nullam ut iaculis sem, ut pellentesque velit. In pharetra mi sed pharetra fringilla. Integer mauris eros, bibendum ac lacus et, lobortis convallis ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc porta dui facilisis sagittis id a nisl. Pellentesque vel libero sed dui pretium aliquam eget ut libero. Donec mauris augue, consequat non est id, suscipit tincidunt ipsum. Quisque volutpat pulvinar justo, in fermentum ante pretium fermentum. Morbi ac ex justo. Duis hendrerit imperdiet pretium. Vivamus malesuada, lectus vel consectetur interdum, est lacus placerat nisl, et aliquet enim ante eu nibh.
+
+Ut venenatis quam nec pretium volutpat. Nunc facilisis, justo in vehicula cursus, est libero dignissim leo, in laoreet nibh augue a neque. Quisque fringilla, ipsum vel fermentum pretium, lorem ipsum rutrum lorem, nec sodales dui turpis eget dolor. Maecenas elementum arcu nec sapien congue, eu sagittis ante euismod. Suspendisse nec aliquam libero. Cras blandit suscipit odio vitae bibendum. Nulla eu neque sit amet justo posuere dictum non ut felis.
+
+Proin blandit arcu lorem. Quisque pellentesque turpis ex, nec ullamcorper magna tincidunt consequat. Duis cursus leo eu molestie pretium. Curabitur lacinia tempor nibh, ut aliquet arcu. Nunc tincidunt, elit in consectetur vulputate, est augue tristique justo, sed faucibus sem eros a tortor. Sed in elit sed ligula porttitor fermentum. Sed dapibus quam in lacinia tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin lobortis elit in lacinia faucibus. Donec laoreet ut ex id lobortis. Mauris at risus blandit, cursus mi non, aliquet quam.
+
+Phasellus ut euismod nulla. Suspendisse dictum molestie tellus, vel pulvinar ex ultrices sit amet. Fusce aliquet metus metus, et vehicula velit mattis sed. Vestibulum fringilla augue leo, a fermentum eros eleifend at. Vivamus libero metus, volutpat non odio eget, ornare aliquet lacus. In dictum faucibus aliquam. Donec et fringilla mi. Suspendisse quis molestie libero. In hac habitasse platea dictumst. Aliquam vel varius est, quis sodales diam. Vivamus id malesuada justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer id nulla in nunc vulputate tempus.
+
+Etiam id mi sit amet mi cursus rhoncus."
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:justificationMode="inter_word"
+            />
+    </ScrollView>
+
+</RelativeLayout>

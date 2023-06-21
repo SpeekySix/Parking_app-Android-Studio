@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ParkingActivity"
-    android:background="#8050DCF0">
+    android:background="@drawable/background_gradient_splash">
 
     <!--
     <TextView
@@ -80,7 +80,44 @@
 
 
 
+    //MENU ITEMS
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:background="@color/backgroundColor">
 
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileBtn"
+            android:src="@drawable/ic_account"
+            android:backgroundTint="#00000000"
+            android:layout_margin="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/aboutBtn"
+            android:src="@drawable/ic_about"
+            android:background="#00000000"
+            android:layout_margin="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/logoutBtn"
+            android:src="@drawable/ic_logout"
+            android:background="#00000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout> -->
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -88,22 +125,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         />
 
     <Button
         android:id="@+id/payBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PLĂTEȘTE"
+        android:text="Plătește"
+        android:textAllCaps="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginRight="140dp"
-        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:textSize="14dp"
         android:textColor="@color/white"
         android:layout_below="@+id/spinner3"
-        android:backgroundTint="#E63F96C8"
+        android:backgroundTint="#001464"
         />
 
 

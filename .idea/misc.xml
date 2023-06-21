@@ -3,33 +3,51 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/parking_app/admin_app/src/main/res/drawable/background_admin.xml" value="0.1565" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/drawable/background_admin_splash.xml" value="0.1565" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/drawable/buttonview.xml" value="0.1565" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/drawable/cardview_border.xml" value="0.1655" />
         <entry key="..\:/parking_app/admin_app/src/main/res/drawable/edittext_bg.xml" value="0.124" />
         <entry key="..\:/parking_app/admin_app/src/main/res/drawable/hover_btn.xml" value="0.125" />
         <entry key="..\:/parking_app/admin_app/src/main/res/drawable/lot_item_bg.xml" value="0.124" />
         <entry key="..\:/parking_app/admin_app/src/main/res/drawable/search_icon.xml" value="0.1" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_accounting.xml" value="0.15625" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_history.xml" value="0.15625" />
         <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_lots.xml" value="0.264" />
-        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_main.xml" value="0.1421875" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_prices.xml" value="0.1921875" />
-        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_splash_screen_admin.xml" value="0.1" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_splash_screen_admin.xml" value="0.264" />
         <entry key="..\:/parking_app/admin_app/src/main/res/layout/activity_users.xml" value="0.1921875" />
-        <entry key="..\:/parking_app/admin_app/src/main/res/layout/alert_dialog_add_new_lot.xml" value="0.18854166666666666" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/alert_dialog_add_new_lot.xml" value="0.264" />
         <entry key="..\:/parking_app/admin_app/src/main/res/layout/dialog_license_number.xml" value="0.15572916666666667" />
-        <entry key="..\:/parking_app/admin_app/src/main/res/layout/lot_item.xml" value="0.1921875" />
-        <entry key="..\:/parking_app/admin_app/src/main/res/layout/user_item.xml" value="0.1921875" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/lot_item.xml" value="0.2" />
+        <entry key="..\:/parking_app/admin_app/src/main/res/layout/user_item.xml" value="0.176" />
         <entry key="..\:/parking_app/admin_app/src/main/res/layout/view_dialog_confirm_delete.xml" value="0.18854166666666666" />
         <entry key="..\:/parking_app/admin_app/src/main/res/menu/search.xml" value="0.1921875" />
+        <entry key="..\:/parking_app/app/src/main/res/drawable/background_gradient.xml" value="0.165" />
+        <entry key="..\:/parking_app/app/src/main/res/drawable/background_gradient_splash.xml" value="0.165" />
+        <entry key="..\:/parking_app/app/src/main/res/drawable/hover_parkbtn.xml" value="0.1565" />
+        <entry key="..\:/parking_app/app/src/main/res/drawable/ic_account.xml" value="0.1" />
+        <entry key="..\:/parking_app/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
+        <entry key="..\:/parking_app/app/src/main/res/drawable/ic_menu_open.xml" value="0.1" />
+        <entry key="..\:/parking_app/app/src/main/res/drawable/ic_parking.xml" value="0.1565" />
         <entry key="..\:/parking_app/app/src/main/res/drawable/license_number_bg.xml" value="0.128" />
         <entry key="..\:/parking_app/app/src/main/res/drawable/logo_app_background.xml" value="0.1975" />
         <entry key="..\:/parking_app/app/src/main/res/drawable/lot_item_bg_client.xml" value="0.1" />
-        <entry key="..\:/parking_app/app/src/main/res/layout/activity_about.xml" value="0.19947916666666668" />
-        <entry key="..\:/parking_app/app/src/main/res/layout/activity_home.xml" value="0.2" />
-        <entry key="..\:/parking_app/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_about.xml" value="0.264" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_drawer.xml" value="0.2" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/parking_app/app/src/main/res/layout/activity_parking.xml" value="0.2" />
-        <entry key="..\:/parking_app/app/src/main/res/layout/activity_profile.xml" value="0.2" />
-        <entry key="..\:/parking_app/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_splash_screen.xml" value="0.16" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/activity_terms.xml" value="0.264" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/content_layout.xml" value="0.2" />
         <entry key="..\:/parking_app/app/src/main/res/layout/dialog_license_number.xml" value="0.2" />
-        <entry key="..\:/parking_app/app/src/main/res/layout/lot_item.xml" value="0.176" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/lot_item.xml" value="0.264" />
+        <entry key="..\:/parking_app/app/src/main/res/layout/menu_header.xml" value="0.2" />
+        <entry key="..\:/parking_app/app/src/main/res/menu/menu_drawer.xml" value="0.176" />
         <entry key="..\:/parking_app/app/src/main/res/mipmap-anydpi-v26/logo_app.xml" value="0.124" />
       </map>
     </option>
@@ -43,7 +61,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.152" />
+        <option name="scale" value="0.2" />
       </ProjectState>
     </option>
   </component>

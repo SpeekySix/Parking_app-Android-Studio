@@ -11,19 +11,20 @@
         android:id="@+id/textName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:fontFamily="sans-serif"
         android:text="Lot name"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#03FDFB"
+        android:textColor="#8CFAFF"
         android:textStyle="italic|bold"
-        android:textSize="18sp"
+        android:textSize="22sp"
         android:text="Lot Price"
         android:textAlignment="center"
         />

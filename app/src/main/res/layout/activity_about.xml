@@ -6,21 +6,23 @@
     android:layout_height="wrap_content"
     tools:context=".AboutActivity">
 
-    <TextView
-        android:id="@+id/textAbout"
+
+
+
+    <ImageView
+        android:id="@+id/safeParkText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="Despre SafePark"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:layout_height="30dp"
+        android:src="@drawable/safeparktxt"
+        android:layout_margin="30dp"
+        />
+
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/textAbout"
+        android:layout_below="@+id/safeParkText"
         android:layout_marginTop="30dp"
         >
     <TextView
@@ -36,7 +38,6 @@ Proin blandit arcu lorem. Quisque pellentesque turpis ex, nec ullamcorper magna 
 Phasellus ut euismod nulla. Suspendisse dictum molestie tellus, vel pulvinar ex ultrices sit amet. Fusce aliquet metus metus, et vehicula velit mattis sed. Vestibulum fringilla augue leo, a fermentum eros eleifend at. Vivamus libero metus, volutpat non odio eget, ornare aliquet lacus. In dictum faucibus aliquam. Donec et fringilla mi. Suspendisse quis molestie libero. In hac habitasse platea dictumst. Aliquam vel varius est, quis sodales diam. Vivamus id malesuada justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer id nulla in nunc vulputate tempus.
 
 Etiam id mi sit amet mi cursus rhoncus. Curabitur rutrum nulla ac magna gravida, bibendum vulputate nisi tempus. Integer eu varius urna. Pellentesque mattis accumsan faucibus. Nullam ut iaculis sem, ut pellentesque velit. In pharetra mi sed pharetra fringilla. Integer mauris eros, bibendum ac lacus et, lobortis convallis ligula."
-        android:layout_below="@id/textAbout"
 
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"

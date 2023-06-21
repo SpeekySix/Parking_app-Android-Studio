@@ -1,60 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#33F44336">
+    android:background="@drawable/background_admin"
+    android:orientation="vertical">
 
 
-    <ImageButton
-        android:id="@+id/lotsBtn"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/lotsimg"
-        android:padding="15dp"
-        android:background="@color/black"/>
-
-    <ImageButton
-        android:id="@+id/usersBtn"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
+        android:text="MANAGE YOUR CITY:"
+        android:layout_margin="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/usersimg"
-        android:padding="15dp"
-        android:background="@color/black"/>
-
-    <ImageButton
-        android:id="@+id/historyBtn"
-        android:layout_marginTop="280dp"
-        android:layout_marginLeft="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_width="wrap_content"
+        android:text="- View, create, edit, remove parking lots."
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/historyimg"
-        android:padding="15dp"
-        android:background="@color/black"
-        />
-
-    <ImageButton
-        android:id="@+id/accBtn"
-        android:layout_marginTop="280dp"
-        android:layout_marginRight="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
+        android:text="- Check the users list."
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="- Check the parkings history."
+    android:textSize="16dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/contabilityimg"
-        android:padding="15dp"
-        android:background="@color/black"
-        />
+        android:text="- Check your balance."
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="italic"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="25dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#050000"
+        android:layout_marginRight="25dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#781414"
+        android:layout_gravity="center">
+        <ImageButton
+            android:id="@+id/lotsBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/lotsimg"
+            android:backgroundTint="@color/white"
+            />
+    </androidx.cardview.widget.CardView></androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#050000"
+        android:layout_marginLeft="25dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FF781414"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/usersBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/usersimg"
+            android:backgroundTint="@color/white"/>
+    </androidx.cardview.widget.CardView></androidx.cardview.widget.CardView>
+
+</LinearLayout>
 
 
 
 
-</RelativeLayout>
+    //SECOND LINE WITH OPTIONS
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="25dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#050000"
+        android:layout_marginRight="25dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FF781414"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/historyBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/historyimg"
+            android:backgroundTint="@color/white"/>
+    </androidx.cardview.widget.CardView></androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#050000"
+        android:layout_marginLeft="25dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FF781414"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/accBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/contabilityimg"
+            />
+    </androidx.cardview.widget.CardView></androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+</LinearLayout>

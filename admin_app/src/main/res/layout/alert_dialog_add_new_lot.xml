@@ -4,8 +4,8 @@
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:layoutDirection="ltr"
-    app:cardBackgroundColor="#1AF44336"
-    app:cardCornerRadius="5dp">
+    app:cardBackgroundColor="#F8E5E5"
+    app:cardCornerRadius="6dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,14 +17,12 @@
             android:id="@+id/textName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_margin="3dp"
-            android:background="@drawable/edittext_bg"
             android:gravity="center"
-            android:hint="Lot name"
+            android:hint="LOT NAME"
             android:padding="5dp"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
+            android:textColor="@color/black"
+            android:textColorHint="#99000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -32,39 +30,50 @@
             android:id="@+id/textPrice"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_margin="3dp"
-            android:background="@drawable/edittext_bg"
             android:gravity="center"
-            android:hint="Lot Price"
+            android:hint="LOT PRICE"
             android:padding="5dp"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textColorHint="#99000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
 
-
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    android:elevation="4dp"
+    android:layout_marginTop="15dp"
+    android:layout_gravity="center">
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonAdd"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="15sp"
             android:background="#CC001464"
             android:text="Add"
             android:textColor="@android:color/white"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold" /></androidx.cardview.widget.CardView>
 
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:elevation="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            >
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonCancel"
-            android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
             android:background="#CC9C0202"
             android:text="Exit"
             android:textColor="@android:color/white"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold" /></androidx.cardview.widget.CardView>and
     </LinearLayout>
 </androidx.cardview.widget.CardView>
