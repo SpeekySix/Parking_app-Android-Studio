@@ -33,7 +33,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ParkingActivity extends AppCompatActivity {
+public class ParkingActivity extends AppCompatActivity implements OnItemClickListener{
     private Spinner spinnerLots;
     private EditText editTextLicensePlate;
     private List<LotsItem> parkingLots;
@@ -56,6 +56,7 @@ public class ParkingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_parking);
 
         payment = findViewById(R.id.payBtn);
+        payment.setVisibility(View.GONE);
 
         PaymentConfiguration.init(this, PublishableKey);
 
@@ -125,6 +126,7 @@ public class ParkingActivity extends AppCompatActivity {
                         .build();
 
         lotsRecyclerAdapter = new LotsRecyclerAdapter(options);
+        lotsRecyclerAdapter.setOnItemClickListener(this);
         recyclerView.setAdapter(lotsRecyclerAdapter);
 
 
@@ -170,6 +172,9 @@ public class ParkingActivity extends AppCompatActivity {
         DatabaseReference parkingsRef = FirebaseDatabase.getInstance().getReference("PARKINGS");
         String parkingId = parkingsRef.push().getKey();
         parkingsRef.child(parkingId).setValue(newParking);*/
+
+
+
     }
 
     private void paymentFlow() {
@@ -305,6 +310,10 @@ public class ParkingActivity extends AppCompatActivity {
         requestQueue.add(request);
 
     }
+    @Override
+    public void onItemClicked(int position) {
+        paymentFlow();
+    }
 
     @Override
     protected void onStart() {
@@ -317,4 +326,6 @@ public class ParkingActivity extends AppCompatActivity {
         super.onStop();
         lotsRecyclerAdapter.stopListening();
     }
+
+
 }

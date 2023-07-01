@@ -18,6 +18,11 @@ import io.reactivex.rxjava3.annotations.NonNull;
 
 public class LotsRecyclerAdapter extends FirebaseRecyclerAdapter<LotsItem, LotsRecyclerAdapter.myViewHolder> {
 
+    private OnItemClickListener listener;
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
      * {@link FirebaseRecyclerOptions} for configuration options.
@@ -40,22 +45,7 @@ public class LotsRecyclerAdapter extends FirebaseRecyclerAdapter<LotsItem, LotsR
         currentPosition = holder.getAdapterPosition();
 
 
-        //open dialog box
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Handle item click
 
-                if (currentPosition != RecyclerView.NO_POSITION) {
-                    // Use currentPosition to access the position
-                    // Do something with the position
-                } else {
-                    // Handle the case when currentPosition is not set
-                }
-
-                //showDialog(position);
-            }
-        });
     }
 
 
@@ -80,7 +70,7 @@ public class LotsRecyclerAdapter extends FirebaseRecyclerAdapter<LotsItem, LotsR
         return new myViewHolder(view);
     }
 
-    class myViewHolder extends RecyclerView.ViewHolder{
+    public class myViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView lotName, lotPrice;
 
         public myViewHolder(@NonNull View itemView){
@@ -88,6 +78,18 @@ public class LotsRecyclerAdapter extends FirebaseRecyclerAdapter<LotsItem, LotsR
 
             lotName = (TextView)itemView.findViewById(R.id.textName);
             lotPrice = (TextView)itemView.findViewById(R.id.textPrice);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            if (listener != null){
+                int position = getAdapterPosition();
+                if (position != RecyclerView.NO_POSITION){
+                    listener.onItemClicked(position);
+                }
+            }
         }
     }
 }

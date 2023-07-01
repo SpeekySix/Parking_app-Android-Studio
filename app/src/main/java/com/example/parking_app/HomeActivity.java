@@ -140,10 +140,8 @@ public class HomeActivity extends DrawerActivity {
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         if (account!=null){
             String Name = account.getDisplayName();
-            //String Email = account.getEmail();
 
             name.setText(Name);
-            //email.setText(Email);
 
         }
 

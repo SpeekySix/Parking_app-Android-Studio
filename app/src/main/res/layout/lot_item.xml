@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:background="@drawable/lot_item_bg_client"
-    android:padding="4sp"
-    android:layout_margin="4sp"
+    android:padding="15sp"
+    android:layout_margin="10sp"
     android:orientation="vertical"
     android:layout_height="wrap_content">
 
